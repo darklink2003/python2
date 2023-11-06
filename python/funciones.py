@@ -96,19 +96,23 @@ def menu():
         frase = input("Introduce la frase a guardar: ")
         nombre_archivo = input("Introduce el nombre del archivo: ")
         guardar_frase(frase, nombre_archivo)
+        menu()
     elif opc == "2":
         # Leemos el archivo.
         nombre_archivo = input("Introduce el nombre del archivo: ")
         contenido = leer_archivo(nombre_archivo)
         print(contenido)
+        menu()
     elif opc=="3":
         #acerca de 
         print("Nombre: Programa de edicion ")
         print("Version: 4")
         print("Autor:Pablo Mondragon ")
+        menu()
     elif opc == "4":
         # Intercambiamos los textos.
         Intercambiar_textos()
+        menu()
         
     else:
         # Salimos del programa.
